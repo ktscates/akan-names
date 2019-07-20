@@ -15,4 +15,24 @@ function akanNames(){
 
     // formula that calculate the specific day of your birthday
     var dayOfWeek=Math.floor( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+
+    var theGender=document.getElementById("gender");
+    
+    // check if a radio button has been checked.
+    if(theGender.checked){
+
+        // get value from radio button.
+        var theValue = theGender.value;
+        
+    }
+
+    // check if the value return female or male then display the corresponding akan name.
+    if(theValue==="female"){
+
+        var akanName=document.getElementById("display").innerHTML=femaleNames[dayOfWeek];
+
+    }else{
+        
+        var akanName=document.getElementById("display").innerHTML="your akan name is: "+maleNames[dayOfWeek];
+    }
 }
