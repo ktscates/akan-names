@@ -5,7 +5,7 @@ var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 // Create a function that will be called whenever you hit the submit button.
 function akanNames(){
 
-    // Declare date inputs.
+    // Declare date inputs and get its values.
     var DD=parseFloat(document.getElementById("dd").value);
     var MM=parseFloat(document.getElementById("mm").value);
     var YY=parseFloat(document.getElementById("yy").value);
