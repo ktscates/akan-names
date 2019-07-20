@@ -1,0 +1,15 @@
+.form-group{
+    margin:5px;
+    display:flex;
+    flex-direction:column;
+}
+
+.form-check-label,#gender{
+    margin-right:40px;
+}
+.col-lg-3{
+    margin:20px;
+}
+button{
+    margin-top:10px;
+}
