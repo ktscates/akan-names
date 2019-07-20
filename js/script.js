@@ -16,25 +16,33 @@ function akanNames(){
     // formula that calculate the specific day of your birthday
     var dayOfWeek=Math.floor( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
 
-    var theGender=document.getElementById("gender");
+    var theFemaleGender=document.getElementById("female");
+    var theMaleGender=document.getElementById("male");
+
     
     // check if a radio button has been checked.
-    if(theGender.checked){
+    if(theFemaleGender.checked){
 
         // get value from radio button.
-        var theValue = theGender.value;
+        var theValue = theFemaleGender.value;
 
+    }else if(theMaleGender.checked){
+        // get value from radio button.
+        var theValue = theMaleGender.value;
     }
 
     // check if the value return female or male then display the corresponding akan name.
-    if(theValue==="female"){
+    if(theValue==="female" && theValue!=="male"){
 
-        var akanName=document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
+        document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
 
-    }else if(theValue==="male"){
+    }else if(theValue==="male" && theValue!=="female"){
         
-        var akanName=document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
-    }else{
-        var akanName=document.getElementById("display").innerHTML="Invalid Input";
+        document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
+
+    }else if(theValue!=="female" && theValue!=="male"){
+
+        document.getElementById("display").innerHTML="Invalid Input";
     }
+ 
 }
