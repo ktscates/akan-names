@@ -23,16 +23,16 @@ function akanNames(){
 
         // get value from radio button.
         var theValue = theGender.value;
-        
+
     }
 
     // check if the value return female or male then display the corresponding akan name.
     if(theValue==="female"){
 
-        var akanName=document.getElementById("display").innerHTML=femaleNames[dayOfWeek];
+        var akanName=document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
 
     }else{
         
-        var akanName=document.getElementById("display").innerHTML="your akan name is: "+maleNames[dayOfWeek];
+        var akanName=document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
     }
 }

@@ -17,27 +17,106 @@
 
     <div class="container">
 
+        <div class="jumbotron">
+
+            <h1 class="display-4">Akan Names</h1>
+
+            <p class="lead">The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person. Middle names have considerably more variety and can refer to their birth order, twin status, or an ancestor's middle name.</p>
+
+            <hr class="my-4">
+
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+        </div>
+
         <form>
 
             <div class="row">
 
-                <div class="col">
-                    <input id="dd" type="text" class="form-control" placeholder="Day...">
+                <div class="col-3">
+
+                    <label>Date</label>
+
+                    <select id="dd" class="form-control form-control">
+
+                        <option>Choose...</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+
+                    </select>
+
                 </div>
 
-                <div class="col">
-                    <input id="mm" type="text" class="form-control" placeholder="Month...">
+                <div class="col-3">
+
+                    <label>Month</label>
+
+                    <select id="mm" class="form-control form-control">
+
+                        <option>Choose...</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+
+                    </select>
+
                 </div>
 
-                <div class="col">
+                <div class="col-3">
+
+                    <label>Year</label>
+
                     <input id="yy" type="text" class="form-control" placeholder="Year...">
+
                 </div>
                 
             </div>
 
             <div class="form-group row">
 
-                <div class="col-sm-2">Gender</div>
+                <div class="col-sm-2">
+                    
+                    <label>Gender<label>
+
+                    </div>
 
                 <div class="col-sm-10">
 
@@ -61,7 +140,7 @@
 
                 <div class="col-sm-10">
 
-                <button id="submit" type="button" class="btn btn-primary" onclick="display()">Submit</button>
+                <button id="submit" type="button" class="btn btn-primary" onclick="akanNames()">Submit</button>
 
                 </div>
 
