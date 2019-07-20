@@ -17,7 +17,8 @@ button{
     margin-top:10px;
 }
 legend{
-    color:white;
+    background-color:#ADEFD1FF;
+    color:#00203FFF;
     text-align:center;
 }
 .jumbotron{
