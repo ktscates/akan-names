@@ -17,6 +17,7 @@ button{
     margin-top:10px;
 }
 legend{
+    color:white;
     text-align:center;
 }
 .jumbotron{
@@ -57,4 +58,8 @@ img{
     height:100%;
     width:100%;
     padding:30px;
+}
+#display{
+    text-align:center;
+    font-size: 50px;
 }
