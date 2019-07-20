@@ -23,19 +23,32 @@ legend{
     position:relative;
     z-index: 2;
     box-shadow: 0 9px 16px -6px black;
+    background-color:rgba(47,79,79,0.7);
+    padding:10px;
+    margin-top:5px;
 }
 body{
-    background-color:darkgoldenrod;
+    background-color:dimgray;
 }
 h1,p{
     text-align:center;
-    color:black;
+    color:white;
 }
 fieldset{
-    background-color:rgba(250,250,250,0.7);
+    background-color:rgba(47,79,79,0.7);
     color:white;
-    border:1px solid white;
-    z-index: 2;
+    border:0px solid rgba(250,250,250,0.7);
     box-shadow: 0px 9px 16px -6px black;
-    border-radius:1%;
+}
+.licence{
+    border:1px solid darkslategray;
+    background-color:white;
+    color:darkslategray;
+    text-align:center;
+    margin-top:3%;
+    margin-bottom:1%;
+}
+.licence p{
+    color:darkslategray;
+    margin-top:1%;
 }
