@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/script.js"></script>
     <title>Akan Names</title>
 
 </head>
@@ -18,16 +19,20 @@
 
         <form>
 
-            <div class="form-group row">
+            <div class="row">
 
-                <label class="col-sm-2 col-form-label">Date of Birth</label>
-
-                <div class="col-sm-10">
-
-                    <input type="date" class="form-control" id="dob" placeholder="Birthday">
-
+                <div class="col">
+                    <input id="dd" type="text" class="form-control" placeholder="Day...">
                 </div>
 
+                <div class="col">
+                    <input id="mm" type="text" class="form-control" placeholder="Month...">
+                </div>
+
+                <div class="col">
+                    <input id="yy" type="text" class="form-control" placeholder="Year...">
+                </div>
+                
             </div>
 
             <div class="form-group row">
@@ -38,11 +43,11 @@
 
                     <div class="form-check">
 
-                        <input class="form-check-input" type="checkbox" id="female">
+                        <input class="form-check-input" id="gender" type="radio" value="female">
 
                         <label class="form-check-label">Female</label>
 
-                        <input class="form-check-input" type="checkbox" id="male">
+                        <input class="form-check-input" id="gender" type="radio" value="male">
 
                         <label class="form-check-label">Male</label>
 
@@ -56,11 +61,13 @@
 
                 <div class="col-sm-10">
 
-                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                <button id="submit" type="button" class="btn btn-primary" onclick="display()">Submit</button>
 
                 </div>
 
             </div>
+
+            <div id="display"></div>
 
         </form>
 
