@@ -31,8 +31,10 @@ function akanNames(){
 
         var akanName=document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
 
-    }else{
+    }else if(theValue==="male"){
         
         var akanName=document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
+    }else{
+        var akanName=document.getElementById("display").innerHTML="Invalid Input";
     }
 }
