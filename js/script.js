@@ -25,23 +25,21 @@ function akanNames(){
 
         // get value from radio button.
         var theValue = theFemaleGender.value;
-        document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
 
     }else if(theMaleGender.checked){
         // get value from radio button.
         var theValue = theMaleGender.value;
-        document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
     }
 
-//     // check if the value return female or male then display the corresponding akan name.
-//     if(theValue==="female" && theValue!=="male"){
+    // check if the value return female or male then display the corresponding akan name.
+    if(theValue==="female" && theValue!=="male"){
 
-//         document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
+        document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
 
-//     }else if(theValue==="male" && theVaue!=="female"){
+    }else if(theValue==="male" && theVaue!=="female"){
         
-//         document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
-
-//     }
+        document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
+        
+    }
  
 }
