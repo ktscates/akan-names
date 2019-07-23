@@ -32,11 +32,11 @@ function akanNames(){
     }
 
     // check if the value return female or male then display the corresponding akan name.
-    if(theValue==="female" && theValue!=="male"){
+    if(theValue==="female"){
 
         document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
 
-    }else if(theValue==="male" && theValue!=="female"){
+    }else if(theValue==="male"){
         
         document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
 
