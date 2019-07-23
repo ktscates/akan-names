@@ -36,10 +36,14 @@ function akanNames(){
 
         document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
 
-    }else if(theValue==="male" && theValue!=="female"){
+    }else if(theValue==="male" && theVaue!=="female"){
         
         document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 42c2096e88f404c75eecda5c98becedf8ba64cf9
     }
  
 }
